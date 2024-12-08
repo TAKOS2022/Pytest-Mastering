@@ -17,4 +17,9 @@ class TestCircle:
     def test_area(self):
         assert self.circle.area() == math.pi * self.circle.radius ** 2
 
+    def test_perimeter(self):
+        result = self.circle.perimeter()
+        expected = 2 *  math.pi * self.circle.radius
+        assert result == expected
+
   
