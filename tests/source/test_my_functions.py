@@ -11,3 +11,8 @@ def test_divide():
     result = my_functions.divide(4, 2)
     expected = 2
     assert result == expected
+
+def test_divide_by_zero():
+    with pytest.raises(ZeroDivisionError):
+        my_functions.divide(4, 0)
+   
