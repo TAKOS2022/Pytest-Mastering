@@ -28,6 +28,11 @@ class Rectangle(Shape):
     def __init__(self, length, width):
         self.length = length
         self.width = width
+
+    def __eq__(self, value):
+        if not isinstance(value, Rectangle):
+            return False
+        return self.width == value.width and self.length == value.length
     
     def area(self):
         return self.length * self.width
