@@ -31,4 +31,9 @@ def test_very_slow():
 @pytest.mark.skip(reason="This feature is currently broken")
 def test_add():
     assert my_functions.add(1, 2) == 3
+    
+
+@pytest.mark.xfail(reason="We know we can't divide by zeo")
+def test_divide_zero_broken():
+    my_functions.divide(1, 0)
 
