@@ -13,6 +13,6 @@ def test_divide():
     assert result == expected
 
 def test_divide_by_zero():
-    with pytest.raises(ZeroDivisionError):
+    with pytest.raises(ValueError):
         my_functions.divide(4, 0)
    
