@@ -7,6 +7,11 @@ def test_add():
     expected = 4
     assert result == expected
 
+def test_add_strinf():
+    result = my_functions.add("I like ", "testing my code !")
+    expected = "I like testing my code !"
+    assert result == expected
+
 def test_divide():
     result = my_functions.divide(4, 2)
     expected = 2
