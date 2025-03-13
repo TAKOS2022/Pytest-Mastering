@@ -3,6 +3,8 @@ Mastery the fundamentals of pytest.
 
 Link youtube video : https://youtu.be/cHYq1MRoyI0?si=m28VGw6j2RPw4XmB
 
+Learn how to write test in python : https://www.youtube.com/watch?v=EgpLj86ZHFQ&t=586s
+
 
 ## Setup pytest
 python -m venv venv
